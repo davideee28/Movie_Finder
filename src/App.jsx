@@ -3,7 +3,7 @@ import Home from "./assets/pages/Home";
 import About from "./assets/pages/About";
 import NoPage from "./assets/pages/NoPage";
 import Header from "./assets/components/Header";
-import "./app.css";
+import "./App.css";
 import Movies from "./assets/pages/Movies";
 import Series from "./assets/pages/Series";
 import Details from "./assets/pages/Details";
