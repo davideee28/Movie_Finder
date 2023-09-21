@@ -1,0 +1,21 @@
+.container{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.titoliPagine {
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff90;
+}
+
+.titoliPagine:hover {
+  background-color: #ffffff;
+}

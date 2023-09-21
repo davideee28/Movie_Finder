@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsGrid {
+  display: grid;
+  justify-items: center;
+  row-gap: 70px;
+  width: 100%;
+}
+
+@media (min-width: 400px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 600px) {
+  .cardsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .cardsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .cardsGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.loadButton {
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.loadButton:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+}
+
+.searchBar input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.searchBar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff90;
+  color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.searchBar button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+@media (pointer: coarse) {
+  .searchBar input {
+    width: 130px;
+  }
+  .searchBar button {
+    width: 70px;
+  }
+}

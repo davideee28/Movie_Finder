@@ -1,0 +1,48 @@
+.container{
+    padding-top: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.descrizione{
+   width: 50%;
+   font-size: 25px;
+   border-radius: 10%;
+   padding: 20px;
+   margin: 20px;
+   background-color: #ffffff90;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenitore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 1200px){
+    .descrizione{
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .descrizione{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px){
+    .descrizione{
+        font-size: 15px;
+    }
+}

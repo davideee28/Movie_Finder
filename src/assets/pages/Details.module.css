@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  color: #000000;
+  background-color: #ffffff90;
+  border: 1px solid black;
+  border-radius: 100%;
+  transition-duration: 0.5s;
+  z-index: 10;
+  text-decoration: none;
+}
+
+.button:hover{
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.background {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-size: 50% 50%;
+}
+
+.primaParte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 2;
+  background-color: #00000090;
+  color: #ffffff;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.secondaParte {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  background-color: #00000090;
+  color: #ffffff;
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.secondaParte a {
+  width: 100px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.5s;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.secondaParte a:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+.terzaParte img {
+  height: 500px;
+  border-radius: 10%;
+}
+.terzaParte {
+  z-index: 2;
+}
+
+@media (pointer: coarse) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: scroll;
+  }
+  
+  .primaParte {
+    font-size: 15px;
+    margin-bottom: 100px;
+  }
+  .secondaParte {
+    font-size: 12px;
+    width: 75%;
+    margin: 20px;
+  }
+  .terzaParte {
+  }
+  .terzaParte img {
+    height: 300px;
+    margin-top: 100px;
+    
+  }
+
+  .button{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 800px){
+  .background {
+    background-repeat: repeat;
+    background-size: 100% 33.3%;
+  }
+}
